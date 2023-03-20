@@ -2,10 +2,10 @@ import Personagem from "./modules/personagem.js";
 import { PersonagemView } from "./components/personagem-view.js";
 import Mago from "./modules/mago.js";
 
-const personagemThiago = new Personagem('Thiago', 5, 'Mago')
-const personagemJose = new Personagem('Jose', 2 , 'Arqueiro')
 
-const personagens =  [personagemJose, personagemThiago]
+const magoThiago = new Mago('Thiago',30,'fogo',23,43)
+
+const personagens =  [magoThiago]
 
 new PersonagemView(personagens).render()
 
