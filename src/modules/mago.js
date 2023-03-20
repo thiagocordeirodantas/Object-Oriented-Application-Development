@@ -12,4 +12,11 @@ export default class Mago extends Personagem{
         this.levelMagico = levelMagico
         this.inteligencia = inteligencia
     }
+
+    obterInsigna(){
+        if(this.levelMagico >= 5 && this.inteligencia >= 5){
+            return` Mestre do ${this.elementoMagico}`
+        }
+        return super.obterInsigna()
+    }
 }
