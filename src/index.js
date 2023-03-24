@@ -6,7 +6,7 @@ import ArqueiroMago from "./modules/arqueiro-mago.js";
 
 
 const arqueiroMaaago = new ArqueiroMago('Joao Matias',230,122,'ar',121,80)
-const magolouco = new Mago('Thiago',32,'gelo',3,3)
+const magolouco = new Mago('Thiago',333,'gelo',3,3)
 
 const personagens =  [arqueiroMaaago,magolouco]
 
@@ -15,3 +15,5 @@ const personagens =  [arqueiroMaaago,magolouco]
 
 new PersonagemView(personagens).render()
 
+
+console.log(Personagem.verificarVencedor(arqueiroMaaago,magolouco))
