@@ -13,8 +13,8 @@ export default class Personagem {
 
     obterInsigna(){
         if(this.level >= 5){
-            return `Implacavel ${this.tipo}`
+            return `Implacavel ${this.constructor.tipo}`
         }
-        return `${this.tipo} Iniciante`
+        return `${this.constructor.tipo} Iniciante`
     }
 }
